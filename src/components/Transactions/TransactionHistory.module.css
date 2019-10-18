@@ -1,0 +1,10 @@
+.transactions {
+  width: 500px;
+  text-align: center;
+}
+.head {
+  background-color: cornflowerblue;
+}
+.headtr {
+  height: 35px;
+}

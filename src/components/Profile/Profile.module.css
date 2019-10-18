@@ -1,0 +1,35 @@
+.profile {
+  width: 200px;
+  /* height: 300px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: grey;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+}
+.name {
+  color: black;
+}
+.description {
+  text-align: center;
+  font-size: 18px;
+}
+.stats {
+  background-color: #f0f8ff;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center;
+}
+.lable {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.quantity {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
