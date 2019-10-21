@@ -3,13 +3,10 @@ import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => {
-  const transactionStyle = styles.transactions;
-  const headTableStyle = styles.head;
-  const headTr = styles.headtr;
   return (
-    <table className={transactionStyle}>
-      <thead className={headTableStyle}>
-        <tr className={headTr}>
+    <table className={styles.transactions}>
+      <thead className={styles.head}>
+        <tr className={styles.headtr}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>

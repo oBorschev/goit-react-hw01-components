@@ -8,3 +8,6 @@
   width: 200px;
   margin-bottom: 2px;
 }
+.avatar {
+  display: inline-block;
+}

@@ -1,28 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Stats.module.css';
+import arrayColorItem from './statColor';
 
 const Stats = ({ title, stats }) => {
-  const styleSection = styles.section;
-  const styleTitle = styles.title;
-  const styleList = styles.list;
-  const styleItem = styles.item;
-
-  const arrayColorItem = [
-    '##228B22',
-    '#FF4500',
-    '#FF0000',
-    '#FFFF00',
-    '#00FF7F',
-  ];
-
   return title ? (
-    <section className={styleSection}>
-      <h2 className={styleTitle}>{title}</h2>
-      <ul className={styleList}>
+    <section className={styles.section}>
+      <h2 className={styles.title}>{title}</h2>
+      <ul className={styles.list}>
         {stats.map(item => (
           <li
-            className={styleItem}
+            className={styles.item}
             key={item.id}
             style={{
               backgroundColor:

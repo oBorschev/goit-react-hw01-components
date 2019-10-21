@@ -4,34 +4,27 @@ import styles from './Profile.module.css';
 
 const Profile = ({ user }) => {
   const { src, alt, name, tag, location } = user;
-  const styleProfile = styles.profile;
-  const styleAvatar = styles.avatar;
-  const styleDescription = styles.description;
-  const styleListStats = styles.stats;
-  const styleName = styles.name;
-  const styleLable = styles.lable;
-  const styleQuantity = styles.quantity;
 
   return (
-    <div className={styleProfile}>
-      <div className={styleDescription}>
-        <img src={src} alt={alt} className={styleAvatar} />
-        <p className={styleName}>{name}</p>
+    <div className={styles.profile}>
+      <div className={styles.description}>
+        <img src={src} alt={alt} className={styles.avatar} />
+        <p className={styles.name}>{name}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
       </div>
-      <ul className={styleListStats}>
-        <li className={styleLable}>
+      <ul className={styles.stats}>
+        <li className={styles.lable}>
           <span>Followers</span>
-          <span className={styleQuantity}>1000</span>
+          <span className={styles.quantity}>1000</span>
         </li>
-        <li className={styleLable}>
-          <span className={styleLable}>Views</span>
-          <span className={styleQuantity}>2000</span>
+        <li className={styles.lable}>
+          <span className={styles.lable}>Views</span>
+          <span className={styles.quantity}>2000</span>
         </li>
-        <li className={styleLable}>
-          <span className={styleLable}>Likes</span>
-          <span className={styleQuantity}>3000</span>
+        <li className={styles.lable}>
+          <span className={styles.lable}>Likes</span>
+          <span className={styles.quantity}>3000</span>
         </li>
       </ul>
     </div>

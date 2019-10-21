@@ -3,13 +3,10 @@ import PropTypes from 'prop-types';
 import styles from './Friend.module.css';
 
 const FriendList = ({ friends }) => {
-  const friendList = styles.list;
-  const itemList = styles.item;
-
   return (
-    <ul className={friendList}>
+    <ul className={styles.list}>
       {friends.map(item => (
-        <li className={itemList} key={item.id}>
+        <li className={styles.item} key={item.id}>
           <span className="status">
             {item.isOnline ? (
               <div
@@ -33,7 +30,7 @@ const FriendList = ({ friends }) => {
           </span>
           <img
             srс={item.avatar}
-            className="avatar"
+            className={styles.avatar}
             width="48"
             alt="user icon"
           />
