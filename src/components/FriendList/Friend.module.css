@@ -9,5 +9,6 @@
   margin-bottom: 2px;
 }
 .avatar {
-  display: inline-block;
+  border-radius: 10px;
+  margin: 0 5px;
 }

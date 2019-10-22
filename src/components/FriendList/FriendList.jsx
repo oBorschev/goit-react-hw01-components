@@ -29,7 +29,7 @@ const FriendList = ({ friends }) => {
             )}
           </span>
           <img
-            srс={item.avatar}
+            src={item.avatar}
             className={styles.avatar}
             width="48"
             alt="user icon"
